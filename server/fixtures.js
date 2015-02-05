@@ -1,4 +1,4 @@
-if(Posts.find().count() == 0) {
+if(Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescopes',
     url: 'http://sachagreif.com/introducing-telescope/'
