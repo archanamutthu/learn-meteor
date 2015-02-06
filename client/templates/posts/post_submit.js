@@ -13,6 +13,9 @@ Template.postSubmit.events({
       if(error) {
         return alert(error.reason);
       }
+      if(result.postExists) {
+        return alert("This post already exists!!!");
+      }
       Router.go('postPage', {_id: result._id});
     })
   }
