@@ -4,3 +4,5 @@ Template.postsList.helpers({
     return Posts.find({}, {sort: {submitted: -1 }});
   }
 });
+
+//sorting the post by submiited date
